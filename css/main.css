@@ -1,0 +1,169 @@
+body {
+	background: #eee;
+	text-align: center;
+}
+	
+a {
+	color: #c0392b;
+	text-decoration: none;
+}
+
+p:first-child, .title:first-child {
+	margin-top: 0;
+}
+
+.row {
+	width: 88%;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row .row {
+	width: auto;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+
+
+/* header stuff 
+-------------------------------------------------------------- */
+
+#header {
+	padding: 3em 0;
+}
+
+#masthead {
+	position: relative;
+	z-index: 10;
+}
+
+#masthead .title {
+	margin: 0;
+}
+
+#masthead .title {
+	margin-bottom: 0.5em;
+}
+
+#masthead a {
+	color: #555;
+}
+
+#menu ul {
+	background: #d3d3d3;
+}
+
+#menu a {
+}
+
+
+
+
+/* content stuff 
+-------------------------------------------------------------- */
+
+#content {
+}
+
+#content > .row {
+/* 	background: rgba(255,0,0,0.1); */
+}
+
+
+
+/* post styles 
+-------------------------------------------------------------- */
+
+.post {
+	background: white;
+	padding: 3em;	
+	text-align: left;
+}
+
+.post .content {
+	line-height: 1.75;
+}
+
+.post .meta {
+	margin-top: 3em;
+}
+
+.post-gallery {
+/* 	background: rgba(0,255,0,0.1); */
+	margin: -1em;
+}
+
+.post-gallery .post {
+	display: inline-block;
+	width: 200px;
+	vertical-align: middle;
+	margin: 1em;
+	padding: 1em;
+	background: #fff;
+}
+
+.post-gallery .post img {
+	margin-bottom: 0.75em;
+}
+
+.slat:before, .slat:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.slat > :nth-child(1) {
+	box-shadow: 0 0 1em rgba(0,0,0,0.1);
+}
+
+@media (min-width:720px) {
+
+	.slat > :nth-child(1) {
+		float: left;
+		max-width: 50%;
+	}
+	
+	.slat > :nth-child(2) {
+		overflow: hidden;
+		padding-left: 4em;
+	}
+
+}
+
+@media (max-width:720px) {
+	
+	.slat > :nth-child(1) {
+		margin-bottom: 3em;
+	}
+	
+}
+
+
+
+
+/* comments styles 
+-------------------------------------------------------------- */
+
+#comments-wrap {
+	margin-top: 3em;
+	background: #fff;
+}
+
+
+
+/* footer styles 
+-------------------------------------------------------------- */
+
+#footer {
+	padding: 3em 0;
+}
