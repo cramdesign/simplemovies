@@ -13,7 +13,7 @@
 	<figcaption>
 		
 		<?php 
-			// otherwise print the title with a link to the single
+			// print the title
 			the_title( '<figcaption class="title">', '</figcaption>' );
 		?>
 				

@@ -17,7 +17,11 @@
 	<div class="post slat">
 		
 		<figure class="feature">
-			<?php the_post_thumbnail( 'large' );?>
+		<?php 
+			// grab the image set in the "Featured Image" control on the post editor
+			// this capability has to be enabled first in functions.php
+			the_post_thumbnail( 'large' ); 
+		?>
 		</figure>
 		
 		<article>
@@ -50,7 +54,7 @@
 					endif;
 
 	
-					// output all the actors tagged in the post
+					// output all the directors tagged in the post
 					if ( has_term( '', 'directors' ) ) :
 					 
 						echo '<h3>Director</h3>';
