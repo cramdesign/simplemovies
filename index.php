@@ -4,12 +4,21 @@
 	get_header(); 
 ?>
 
+<!-- index.php -->
+
+<?php
+	// tests to see if this is an archive page
+	// if true, display a special page header
+	if( is_archive() ) get_template_part( 'inc/archive', 'header' );
+?>
+
 
 <div class="row">
 	
 	<section class="post-gallery">
 		
 		<?php
+			// THE LOOP
 			// start the loop... make wp look for posts
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
 		

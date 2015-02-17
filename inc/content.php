@@ -7,12 +7,10 @@
 			
 				// if this post is a single post, page, or attachment; just print the title
 				// but not if it's the front page as set in Settings > Reading
-				if ( !is_front_page() ) : 
-				
-					the_title( '<h1 class="title">', '</h1>' ); 
-					
+				if ( !is_front_page() ) :
+					the_title( '<h1 class="title">', '</h1>' );
 				endif;
-				
+								
 			else : 
 			
 				// otherwise print the title with a link to the single
